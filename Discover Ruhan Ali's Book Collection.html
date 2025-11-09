@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruhan Ali Book Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 24px; }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #fff;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #6a11cb;
+    }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+    .hero a {
+      background: #2575fc;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero a:hover { background: #6a11cb; }
+
+    section { padding: 60px 20px; }
+    .books-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .book {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .book:hover { transform: translateY(-5px); }
+    .book img { width: 100%; border-radius: 10px; }
+    .book h3 { margin: 15px 0 10px; font-size: 20px; color: #2575fc; }
+    .book p { font-size: 14px; color: #555; }
+    .book a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #6a11cb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .book a:hover { background: #2575fc; }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .books-container { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ruhan Ali Books</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="#app">App Download</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Discover Ruhan Ali's Book Collection</h2>
+  <p>Explore amazing stories, exciting novels, and download the app to read more!</p>
+  <a href="#books">Explore Books</a>
+</section>
+
+<section id="about">
+  <h2 style="text-align:center; color:#2575fc;">About Ruhan Ali</h2>
+  <p style="max-width:700px; margin:20px auto; text-align:center; font-size:16px;">
+    Name: <strong>Ruhan Ali</strong><br>
+    Date of Birth: <strong>26/10/2008</strong> (Age: 17)<br>
+    From: <strong>Dibrugarh Chaulkhowa, Assam, India</strong><br><br>
+    Ruhan Ali is a young author creating engaging stories for teenagers and adults alike. 
+    His books combine emotion, adventure, and modern storytelling that resonates with today’s readers.
+  </p>
+</section>
+
+<section id="books">
+  <h2 style="text-align:center; color:#2575fc;">Books</h2>
+  <div class="books-container">
+    <div class="book">
+      <img src="https://books.google.com/books/content?id=nW-VEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt="When The Wind Called My Name">
+      <h3>When The Wind Called My Name</h3>
+      <p>A heartfelt story of love, self-discovery, and the journey of youth. Perfect for readers who love emotional and relatable novels.</p>
+      <a href="https://play.google.com/store/books/details/Ruhan_Ali_When_The_Wind_Called_My_Name?id=nW-VEQAAQBAJ" target="_blank">Buy on Google Play</a>
+    </div>
+    <!-- Add more books here -->
+  </div>
+</section>
+
+<section id="app">
+  <h2 style="text-align:center; color:#2575fc;">Download the App</h2>
+  <p style="max-width:700px; margin:20px auto; text-align:center; font-size:16px;">
+    Get the official app to read Ruhan Ali's books anytime, anywhere.
+  </p>
+  <div style="text-align:center;">
+    <a href="https://play.google.com/store" target="_blank" style="margin-right:10px; padding:15px 30px; background:#6a11cb; color:#fff; text-decoration:none; border-radius:30px;">Google Play</a>
+    <a href="https://www.apple.com/app-store/" target="_blank" style="padding:15px 30px; background:#2575fc; color:#fff; text-decoration:none; border-radius:30px;">App Store</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 style="text-align:center; color:#2575fc;">Contact</h2>
+  <p style="text-align:center; font-size:16px;">Reach out for collaborations or queries.</p>
+  <form style="max-width:500px; margin:20px auto; display:flex; flex-direction:column; gap:15px;">
+    <input type="text" placeholder="Your Name" required style="padding:10px; border-radius:10px; border:1px solid #ccc;">
+    <input type="email" placeholder="Your Email" required style="padding:10px; border-radius:10px; border:1px solid #ccc;">
+    <textarea placeholder="Message" required style="padding:10px; border-radius:10px; border:1px solid #ccc;"></textarea>
+    <button type="submit" style="padding:15px; background:#6a11cb; color:#fff; border:none; border-radius:30px; font-weight:600;">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Ruhan Ali Book Collection. All rights reserved.
+</footer>
+
+</body>
+</html>      
